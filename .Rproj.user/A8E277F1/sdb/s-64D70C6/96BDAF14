@@ -1,10 +1,10 @@
 {
-    "contents" : "load(\"~/Money/Money.txt\")\nView(Money)\nFILE <- \"~/Money/Money.txt\"\ndat <- read.table(file = FILE, header = TRUE)\nsummary (dat)\nv <- c(\"M2\", \"interest\", \"GDP\", \"Year\")\nprint (v)\nf <- c(\"Year$M2\", \"Year$interest\", \"Year$GDP\")\nprint(f)\nlm (formula = M2 ~ interest + GDP, data=dat)\nm <- lm(formula = M2 ~ interest + GDP, data=dat, TRUE)\nsummary(m)\n//parameter estimates//\ncoef(m)\nanova.lm(m)\nanova(m)\ncoefficients(m)\nfitted(m)\nresiduals(m)\nsummary(m)\ndeviance(m)\nanova.lmlist(m)\nsummary(m)\nggplot <- lm(formula = M2 ~ interest + GDP, data=dat)\n",
+    "contents" : "load(\"~/Money/Money.txt\")\nView(Money)\nFILE <- \"~/Money/Money.txt\"\ndat <- read.table(file = FILE, header = TRUE)\nsummary (dat)\nv <- c(\"M2\", \"interest\", \"GDP\", \"Year\")\nprint (v)\nf <- c(\"Year$M2\", \"Year$interest\", \"Year$GDP\")\nprint(f)\nlm (formula = M2 ~ interest + GDP, data=dat)\nm <- lm(formula = M2 ~ interest + GDP, data=dat, TRUE)\nsummary(m)\n//parameter estimates//\ncoef(m)\nanova.lm(m)\nanova(m)\ncoefficients(m)\nfitted(m)\nresiduals(m)\nsummary(m)\ndeviance(m)\nanova.lmlist(m)\nsummary(m)\nprint(m)\ncoef(m)\n",
     "created" : 1393200091795.000,
     "dirty" : true,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "3520684481",
+    "hash" : "2658144617",
     "id" : "96BDAF14",
     "lastKnownWriteTime" : 1393204346,
     "path" : "~/Money/history.R",
