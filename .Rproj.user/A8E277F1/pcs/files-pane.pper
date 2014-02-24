@@ -1,0 +1,9 @@
+{
+    "path" : "~/Money",
+    "sortOrder" : [
+        {
+            "ascending" : true,
+            "columnIndex" : 2
+        }
+    ]
+}
