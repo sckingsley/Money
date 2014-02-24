@@ -1,14 +1,21 @@
 {
-    "contents" : "load(\"~/Money/Money.txt\")\nView(Money)\nFILE <- \"~/Money/Money.txt\"\ndat <- read.table(file = FILE, header = TRUE)\nsummary (dat)\nv <- c(\"M2\", \"interest\", \"GDP\", \"Year\")\nprint (v)\nf <- c(\"Year$M2\", \"Year$interest\", \"Year$GDP\")\nprint(f)\nlm (formula = M2 ~ interest + GDP, data=dat)\nm <- lm(formula = M2 ~ interest + GDP, data=dat, TRUE)\nsummary(m)\n//parameter estimates//\ncoef(m)\nanova.lm(m)\nanova(m)\ncoefficients(m)\nfitted(m)\nresiduals(m)\nsummary(m)\ndeviance(m)\nanova.lmlist(m)\nsummary(m)\nggplot <- lm(formula = M2 ~ interest + GDP, data=dat)\n",
+<<<<<<< HEAD
+    "contents" : "FILE <- \"~/Dropbox/Metrics Data Files/Money.txt\"\ndat <- read.table(file = FILE, header = TRUE)\nv <- c(\"M2\", \"interest\", \"GDP\", \"Year\")\nprint(v)\nsummary(dat)\nf <- c(\"Year$M2\", \"Year$interest\", \"Year$GDP\")\nprint(f)\nsummary(dat)\nlm(formula = M2 ~ interest + GDP, data=dat)\nm <- lm(formula = M2 ~ interest + GDP, data=dat)\nlm(formula = M2 ~ interest + GDP, data=dat)\nsummary(m)\nanova(m)\n?plot\n",
+=======
+    "contents" : "load(\"~/Money/Money.txt\")\nView(Money)\nFILE <- \"~/Money/Money.txt\"\ndat <- read.table(file = FILE, header = TRUE)\nsummary (dat)\nv <- c(\"M2\", \"interest\", \"GDP\", \"Year\")\nprint (v)\nf <- c(\"Year$M2\", \"Year$interest\", \"Year$GDP\")\nprint(f)\nlm (formula = M2 ~ interest + GDP, data=dat)\nm <- lm(formula = M2 ~ interest + GDP, data=dat, TRUE)\nsummary(m)\n//parameter estimates//\ncoef(m)\nanova.lm(m)\nanova(m)\ncoefficients(m)\nfitted(m)\nresiduals(m)\nsummary(m)\ndeviance(m)\nanova.lmlist(m)\nsummary(m)\nprint(m)\ncoef(m)\n",
+>>>>>>> 3e5e02ade07f7f2e51a93009b9d53bcf3ad5b74f
     "created" : 1393200091795.000,
     "dirty" : true,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "3520684481",
+<<<<<<< HEAD
+    "hash" : "1470508959",
+=======
+    "hash" : "2658144617",
+>>>>>>> 3e5e02ade07f7f2e51a93009b9d53bcf3ad5b74f
     "id" : "96BDAF14",
-    "lastKnownWriteTime" : 1393204346,
+    "lastKnownWriteTime" : 1393206017,
     "path" : "~/Money/history.R",
-    "project_path" : "history.R",
     "properties" : {
         "tempName" : "Untitled1"
     },
